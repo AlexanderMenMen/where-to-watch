@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Menú para el NavigationView del menú lateral -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!-- Grupo de elementos que se comportan de forma checkable (selección única) -->
+    <group android:checkableBehavior="single">
+        <!-- Elemento: Inicio -->
+        <item
+            android:id="@+id/Inicio"
+            android:icon="@drawable/home"
+            android:title="@string/inicio" />
+        <!-- Elemento: Películas Guardadas -->
+        <item
+            android:id="@+id/PelisGuardadas"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/pelisG" />
+        <!-- Elemento: Usuarios Guardados -->
+        <item
+            android:id="@+id/UsuariosGuardados"
+            android:icon="@drawable/ic_person"
+            android:title="@string/usuariosG" />
+        <!-- Elemento: Series Guardadas -->
+        <item
+            android:id="@+id/SeriesGuardadas"
+            android:icon="@drawable/serie"
+            android:title="@string/seriesG" />
+    </group>
+
+    <!-- Elemento de menú agrupado bajo "otrasOpciones" -->
+    <item
+        android:title="otrasOpciones"
+        android:checkableBehavior="single">
+        <menu>
+            <!-- Configuración de la cuenta (Fragment) -->
+            <item
+                android:id="@+id/ConfiguredFragment"
+                android:icon="@drawable/engranaje"
+                android:title="@string/configuracion" />
+            <!-- Información Firebase -->
+            <item
+                android:id="@+id/ConfiguredFirebase"
+                android:icon="@drawable/firebase"
+                android:title="@string/info" />
+            <!-- Cerrar sesión -->
+            <item
+                android:id="@+id/logOutFragment"
+                android:icon="@drawable/log_out"
+                android:title="@string/salir" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,26 @@
+# Gradle
+.gradle/
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Configuración local
+local.properties
+
+# Android Studio
+*.iml
+.idea/
+
+# Archivos de firma
+*.jks
+app/release.keystore
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Logs y caché
+*.log
+
+# Datos sensibles
+secrets.properties

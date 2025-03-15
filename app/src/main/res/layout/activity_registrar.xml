@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    activity_registrar.xml
+    Este layout se utiliza en RegistrarUser.java para crear una nueva cuenta de usuario.
+    Contiene un ImageView (logo), un TextView para el título, campos de texto para ingresar
+    nombre, apellido, usuario y contraseña, y botones para "Registrarse" y "Cancelar".
+-->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login">
+
+    <!-- Logo de la aplicación. Se fija con constraints al top y bottom del padre,
+         lo que puede ocasionar que aparezca centrado verticalmente. -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="415dp"
+        android:layout_height="255dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_login" />
+
+    <!-- Título "CREAR NUEVA CUENTA". También anclado al top y bottom del padre,
+         con bias vertical de 0.28. -->
+    <TextView
+        android:id="@+id/CrearCuenta"
+        android:layout_width="273dp"
+        android:layout_height="32dp"
+        android:gravity="center"
+        android:text="@string/CrearCuenta"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <!-- Campo de texto para el Nombre. Anclado al top y bottom del padre,
+         con bias vertical de 0.387. Tiene un ícono de "ic_input_add". -->
+    <EditText
+        android:id="@+id/editTextTextNombreReg"
+        android:layout_width="285dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="@string/nombreLogin"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:drawableStart="@android:drawable/ic_input_add"
+        android:background="@drawable/button_rounded"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
+
+    <!-- Campo de texto para el Apellido. Anclado al top y bottom del padre,
+         con bias vertical de 0.486. Tiene un ícono de "btn_star". -->
+    <EditText
+        android:id="@+id/editTextTextApellidoreg"
+        android:layout_width="285dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="@string/ApellidoLogin"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:drawableStart="@android:drawable/btn_star"
+        android:background="@drawable/button_rounded"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486" />
+
+    <!-- Campo de texto para el Usuario. Anclado al top y bottom del padre,
+         con bias vertical de 0.587. Tiene un ícono de "presence_online". -->
+    <EditText
+        android:id="@+id/editTextTextUsuarioReg"
+        android:layout_width="285dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="@string/usuario"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:drawableStart="@android:drawable/presence_online"
+        android:background="@drawable/button_rounded"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.587" />
+
+    <!-- Campo de texto para la Contraseña. Anclado al top y bottom del padre,
+         con bias vertical de 0.69. Tiene un ícono de "ic_lock_idle_lock". -->
+    <EditText
+        android:id="@+id/editTextTextPasswordReg"
+        android:layout_width="285dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="@string/contraseña"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:drawableStart="@android:drawable/ic_lock_idle_lock"
+        android:background="@drawable/button_rounded"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69" />
+
+    <!-- Botón para "Registrarse". Anclado al top y bottom del padre,
+         con bias vertical de 0.819. -->
+    <Button
+        android:id="@+id/RegistrarseReg"
+        android:layout_width="289dp"
+        android:layout_height="44dp"
+        android:background="@drawable/button_rounded"
+        android:text="@string/Registrarse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.819" />
+
+    <!-- Botón para "Cancelar". Anclado al top y bottom del padre,
+         con bias vertical de 0.908. -->
+    <Button
+        android:id="@+id/CancelarReg"
+        android:layout_width="289dp"
+        android:layout_height="44dp"
+        android:background="@drawable/button_rounded"
+        android:text="@string/cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.467"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.908" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

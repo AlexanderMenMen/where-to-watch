@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout para DisplayUser: permite editar los datos de usuario -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login"
+    tools:context=".DisplayUser">
+
+    <!-- Imagen decorativa o logotipo -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="415dp"
+        android:layout_height="255dp"
+        android:layout_marginBottom="512dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo_login" />
+
+    <!-- Título de la pantalla -->
+    <TextView
+        android:id="@+id/EditarCuenta"
+        android:layout_width="273dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="176dp"
+        android:text="@string/editarCuenta"
+        android:gravity="center"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Campo de edición para el nombre -->
+    <EditText
+        android:id="@+id/editTextTextNombreEdit"
+        android:layout_width="285dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="@string/nombreLogin"
+        android:inputType="textPersonName"
+        android:drawableStart="@android:drawable/ic_input_add"
+        android:textColor="@color/black"
+        android:background="@drawable/button_rounded"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" />
+
+    <!-- Campo de edición para el apellido -->
+    <EditText
+        android:id="@+id/editTextTextApellidoEdit"
+        android:layout_width="285dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="@string/ApellidoLogin"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:drawableStart="@android:drawable/btn_star"
+        android:background="@drawable/button_rounded"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.486" />
+
+    <!-- Campo de edición para el usuario (deshabilitado) -->
+    <EditText
+        android:id="@+id/editTextTextUsuarioEdit"
+        android:layout_width="285dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="@string/usuario"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/ic_person"
+        android:background="@drawable/button_rounded"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.587" />
+
+    <!-- Campo de edición para la contraseña -->
+    <EditText
+        android:id="@+id/editTextTextPasswordEdit"
+        android:layout_width="285dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="@string/contraseña"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:drawableStart="@drawable/ic_lock"
+        android:background="@drawable/button_rounded"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69" />
+
+    <!-- Botón para actualizar los datos -->
+    <Button
+        android:id="@+id/ActualizarEdit"
+        android:layout_width="289dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="568dp"
+        android:background="@drawable/button_rounded"
+        android:text="@string/guardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Botón para cancelar la edición -->
+    <Button
+        android:id="@+id/CancelarEdit"
+        android:layout_width="289dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="624dp"
+        android:background="@drawable/button_rounded"
+        android:text="@string/cancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

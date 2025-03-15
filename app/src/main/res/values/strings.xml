@@ -1,0 +1,60 @@
+<resources>
+    <!-- Nombre de la aplicación -->
+    <string name="app_name">Where To Watch</string>
+
+    <!-- Cadenas para la pantalla de búsqueda y registro de películas -->
+    <string name="nombrePeli">Introduzca el nombre de la pelicula</string>
+    <string name="verPelis">Peliculas Registradas</string>
+
+    <!-- Cadenas para acciones en películas -->
+    <string name="eliminar">Eliminar</string>
+    <string name="Editar">Editar</string>
+
+    <!-- Cadenas para inicio de sesión y registro -->
+    <string name="Login">Iniciar sesión</string>
+    <string name="Registrarse">Registrarse</string>
+
+    <!-- Cadenas para mostrar detalles de una película -->
+    <string name="nombre">Nombre: </string>
+    <string name="genero">Genero: </string>
+    <string name="plataforma">Plataformas: </string>
+    <string name="director">Director: </string>
+    <string name="duracion">Duración: </string>
+    <string name="eliminarPeli">¿Estas seguro de eliminar esta pelicula?</string>
+    <string name="si">Si</string>
+    <string name="no">No</string>
+
+    <!-- Cadenas para datos de usuario -->
+    <string name="contraseña">Contraseña</string>
+    <string name="usuario">Usuario</string>
+    <string name="nombreLogin">Nombre</string>
+    <string name="ApellidoLogin">Apellido</string>
+
+    <!-- Cadenas para registro de usuario -->
+    <string name="CrearCuenta">CREAR NUEVA CUENTA</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="editarCuenta">Editar Cuenta</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="guardar">Guardar</string>
+
+    <!-- Cadenas para listado de usuarios -->
+    <string name="usuariosRegistrados">USUARIOS REGISTRADOS</string>
+
+    <!-- Cadenas para menú y navegación -->
+    <string name="salir">Cerrar Sesión</string>
+    <string name="inicio">Inicio</string>
+    <string name="usuariosG">Usuarios Registrados</string>
+    <string name="seriesG">Series Almacenadas</string>
+    <string name="pelisG">Peliculas Guardadas</string>
+    <string name="todo">Todo lo que quieras ver en un solo lugar</string>
+    <string name="configuracion">Configuración</string>
+    <string name="info">Información Firebase</string>
+    <string name="otrasOpciones">Otras Opciones</string>
+
+    <!-- Cadenas para el Navigation Drawer -->
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
+    <!-- Cadenas para el menú de MainActivity -->
+    <string name="nuevaSerie">Nueva Serie</string>
+</resources>

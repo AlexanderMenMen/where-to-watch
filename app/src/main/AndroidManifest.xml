@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.wheresee">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".Aplicacion"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WhereSee">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainUser" android:theme="@style/Theme.WhereSee" android:exported="true"/>
+        <activity android:name=".RegistrarUser" android:theme="@style/Theme.WhereSee" android:exported="true"/>
+        <activity android:name=".MainActivity" android:theme="@style/Theme.WhereSee" android:exported="true"/>
+        <activity android:name=".DisplayFilm" android:exported="true" android:theme="@style/Theme.WhereSeeFilm"/>
+        <activity android:name=".ActivityGuardadas" android:theme="@style/Theme.WhereSee" android:exported="true"/>
+        <activity android:name=".ActivityConfig" android:theme="@style/Theme.WhereSee" android:exported="true"/>
+        <activity android:name=".DisplayUser" android:theme="@style/Theme.WhereSee" android:exported="true"/>
+        <activity android:name=".ActivityMostrarUser" android:theme="@style/Theme.WhereSee" android:exported="true"/>
+        <activity android:name=".ActivityLoginFirebase" android:theme="@style/Theme.WhereSee" android:exported="true"/>
+        <activity android:name=".ActivitySeriesMostrar" android:theme="@style/Theme.WhereSee" android:exported="true"/>
+        <activity android:name=".ActivityInfo" android:theme="@style/Theme.WhereSeeFilm" android:exported="true"/>
+    </application>
+
+</manifest>

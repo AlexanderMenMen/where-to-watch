@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "234703472476",
+    "project_id": "wheretowatch-beb07",
+    "storage_bucket": "wheretowatch-beb07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234703472476:android:52cb7252b0e9b7b7036399",
+        "android_client_info": {
+          "package_name": "com.example.wheresee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234703472476-177t1di13va6jqjfpuantusja5tjq10d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wheresee",
+            "certificate_hash": "eee5bd3072fb1be29001fe1dd1abb5688d8d8015"
+          }
+        },
+        {
+          "client_id": "234703472476-d7c1u1n9n40ogbtfr4ukg351ppg52laf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtufQaB75BdQq3txe4CCj43qTnBjO-j5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234703472476-d7c1u1n9n40ogbtfr4ukg351ppg52laf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

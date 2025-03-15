@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout para DisplayFilm: contiene un ScrollView que envuelve un RelativeLayout con los campos de datos y botones -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris"
+    tools:context=".DisplayFilm">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <!-- Etiqueta para el campo "Nombre" -->
+        <TextView
+            android:id="@+id/textViewNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextNombre"
+            android:text="@string/nombre"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <!-- Campo para el nombre de la película -->
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <!-- Etiqueta para el campo "Género" -->
+        <TextView
+            android:id="@+id/textViewGenero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextGenero"
+            android:layout_alignLeft="@+id/textViewNombre"
+            android:text="@string/genero"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <!-- Campo para el género de la película -->
+        <EditText
+            android:id="@+id/editTextGenero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextNombre"
+            android:layout_alignLeft="@+id/editTextNombre"
+            android:ems="10"
+            android:inputType="text" />
+
+        <!-- Etiqueta para el campo "Plataforma" -->
+        <TextView
+            android:id="@+id/textViewPlataforma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextPlataforma"
+            android:layout_alignLeft="@+id/textViewNombre"
+            android:text="@string/plataforma"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <!-- Campo para la plataforma de la película -->
+        <EditText
+            android:id="@+id/editTextPlataforma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextGenero"
+            android:layout_marginLeft="110dp"
+            android:ems="10"
+            android:inputType="text" />
+
+        <!-- Etiqueta para el campo "Director" -->
+        <TextView
+            android:id="@+id/textViewDirector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextDirector"
+            android:layout_alignLeft="@+id/textViewNombre"
+            android:text="@string/director"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <!-- Campo para el director de la película -->
+        <EditText
+            android:id="@+id/editTextDirector"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextPlataforma"
+            android:layout_alignLeft="@+id/editTextNombre"
+            android:ems="10"
+            android:inputType="text" />
+
+        <!-- Etiqueta para el campo "Duración" -->
+        <TextView
+            android:id="@+id/textViewDuracion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextDuracion"
+            android:layout_alignLeft="@+id/textViewNombre"
+            android:text="@string/duracion"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <!-- Campo para la duración de la película -->
+        <EditText
+            android:id="@+id/editTextDuracion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextDirector"
+            android:layout_alignRight="@+id/editTextNombre"
+            android:ems="10"
+            android:inputType="number" />
+
+        <!-- Botón para guardar cambios (se muestra solo en modo edición) -->
+        <Button
+            android:id="@+id/Guardar"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editTextDuracion"
+            android:layout_marginLeft="-77dp"
+            android:layout_marginTop="500dp"
+            android:background="@drawable/button_rounded"
+            android:onClick="run"
+            android:text="@string/guardar" />
+
+        <!-- ImageView para la imagen de la película; al pulsarla se puede cambiar la imagen -->
+        <ImageView
+            android:id="@+id/imageViewFilm"
+            android:layout_width="193dp"
+            android:layout_height="183dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="260dp"
+            android:onClick="GuardarImagen"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout para MainUser: pantalla de inicio de sesión -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/registrar"
+    tools:context=".MainUser">
+
+    <!-- Imagen decorativa o logotipo -->
+    <ImageView
+        android:id="@+id/imageViewLogin"
+        android:layout_width="367dp"
+        android:layout_height="446dp"
+        android:layout_marginBottom="316dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/logo_registrar" />
+
+    <!-- Campo para ingresar el usuario -->
+    <EditText
+        android:id="@+id/editTextTextUsuarioLogin"
+        android:layout_width="285dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_nick_icon"
+        android:ems="10"
+        android:hint="@string/usuario"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.483" />
+
+    <!-- Campo para ingresar la contraseña -->
+    <EditText
+        android:id="@+id/editTextTextPasswordLogin"
+        android:layout_width="285dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_lock_icon"
+        android:ems="10"
+        android:hint="@string/contraseña"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568" />
+
+    <!-- Botón para iniciar sesión con usuario/contraseña -->
+    <Button
+        android:id="@+id/iniciarSesionLogin"
+        android:layout_width="289dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="464dp"
+        android:background="@drawable/button_rounded"
+        android:text="@string/Login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Botón para acceder a la pantalla de registro -->
+    <Button
+        android:id="@+id/RegistrarseLogin"
+        android:layout_width="289dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="524dp"
+        android:background="@drawable/button_rounded"
+        android:text="@string/Registrarse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Botón de Google Sign-In para iniciar sesión con Firebase -->
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/LoginFirebase"
+        android:layout_width="173dp"
+        android:layout_height="46dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.871" />
+</androidx.constraintlayout.widget.ConstraintLayout>

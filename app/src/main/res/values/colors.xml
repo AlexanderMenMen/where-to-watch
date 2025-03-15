@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tonos de morado -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+
+    <!-- Tonos de teal -->
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <!-- Colores básicos -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Colores personalizados -->
+    <color name="gris">#d4d4dc</color>
+    <color name="login">#343434</color>
+    <color name="grisHint">#737373</color>
+    <color name="blue">#08042c</color>
+    <color name="registrar">#f4f4f4</color>
+    <color name="botonLogin">#343c44</color>
+    <color name="botonRegistrar">#fbf3e3</color>
+
+    <!-- Colores primarios -->
+    <color name="primaryColor">#22326A</color>
+    <color name="primaryLightColor">#4f5b62</color>
+    <color name="primaryDarkColor">#000a12</color>
+    <color name="primaryTextColor">#ffffff</color>
+</resources>
