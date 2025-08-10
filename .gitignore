@@ -1,16 +1,36 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Gradle
+.gradle/
+build/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Configuración local
 local.properties
 secrets.properties
+
+# Android Studio / IntelliJ
+*.iml
+.idea/
+.idea/caches
+.idea/libraries
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# Archivos de firma
+*.jks
+app/release.keystore
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Logs y caché
+*.log
+captures/
+.externalNativeBuild
+.cxx/
+
+# Datos sensibles
+google-services.json
