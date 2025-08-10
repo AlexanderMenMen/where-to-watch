@@ -4,7 +4,18 @@
 
 ---
 
-## Funcionalidades ✨
+## Índice
+- [Características](#características-✨)
+- [Tecnologías usadas](#tecnologías-usadas-🚀)
+- [Demostración](#demostración-🎞️)
+- [Instalación](#instalación-y-uso-🔧)
+- [Estructura del proyecto](#estructura-del-proyecto-📁)
+- [Licencia](#licencia-📜)
+- [Contacto](#contacto-🧑🏽‍💻)
+
+---
+
+## Características  ✨
 
 - **Inicio de Sesión y Registro:**
   - Inicia sesión mediante usuario/contraseña.
@@ -30,12 +41,24 @@
 
 ## Tecnologías Utilizadas 🚀
 
-- **Android Studio** y **Java** para el desarrollo de la aplicación.
-- **SQLite** para el almacenamiento local de películas y usuarios.
-- **Firebase Authentication** y **Google Sign-In** para la autenticación de usuarios.
-- **Firebase Realtime Database** (opcional) para la persistencia de datos de series.
-- **Glide y Picasso** para la carga y manejo de imágenes.
-- **Material Components** para un diseño moderno y responsivo.
+- **Lenguaje:** Java  
+- **Plataforma:** Android Studio, Material Components, NavigationView  
+- **Datos:** SQLite (local)  
+- **Autenticación:** Firebase Authentication + Google Sign-In  
+- **Imágenes:** Glide / Picasso  
+
+---
+
+## Demostración 🎞️
+
+| Pantalla | Descripción |
+|----------|-------------|
+| ![](./media/home.png) | **Pantalla de bienvenida (Splash)** con GIF animado |
+| ![](./media/login.png) | **Inicio de sesión / Registro** con email y contraseña |
+| ![](./media/google_signin.png) | Inicio de sesión con **Google** |
+| ![](./media/list_movies.png) | **Listado de películas/series** almacenadas en SQLite |
+| ![](./media/add_edit.png) | **Formulario** para editar contenido |
+| ![](./media/menu.png) | **Menú lateral** y configuración para eliminar cuenta |
 
 ---
 
@@ -96,5 +119,10 @@ Mejorar la responsividad y la experiencia de usuario, adaptando la interfaz a di
 - Mejoras en Seguridad:
 Asegurarse de que se gestionen adecuadamente los datos sensibles, utilizando ```secrets.properties``` y actualizando las configuraciones en Firebase según sea necesario.
 
-## Licencia 📜
-Este proyecto se distribuye bajo la licencia MIT.
+## License 📜
+Este proyecto está licenciado bajo la [MIT License](LICENSE).
+
+## Contacto 🧑🏽‍💻
+
+* **GitHub:** [AlexanderMenMen](https://github.com/AlexanderMenMen)
+* **LinkedIn:** [Alexander Mendoza Mendoza](https://www.linkedin.com/in/alexander-mendoza-mendoza-876255214/)
