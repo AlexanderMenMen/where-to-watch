@@ -99,7 +99,7 @@ public class ActivitySeriesMostrar extends AppCompatActivity implements Navigati
         if (id == R.id.nuevolibro)
         {
             // Se inserta una nueva serie de ejemplo al adaptador
-            app.getAdaptador().insertarLibro(new Series("aaaa", "aaaaa", "aaaaaa"));
+            app.getAdaptador().insertarSerie(new Series("aaaa", "aaaaa", "aaaaaa"));
         }
         return super.onOptionsItemSelected(item);
     }
